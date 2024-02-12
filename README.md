@@ -14,9 +14,8 @@ To get started with this repository:
 
 1.  Clone the repository:
 
-```{=html}
 <pre> git clone https://github.com/lshpaner/ds_shortcuts.git </pre>
-```
-## Contribution
+
+# Contribution
 
 Contributions are always welcome! If you have a shortcut, script, or snippet that you think would be beneficial, feel free to fork the repo and submit a pull request. Please ensure your code is well-documented and tested.
