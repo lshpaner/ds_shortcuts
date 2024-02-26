@@ -33,6 +33,11 @@ When this command is run, it will recursively search for all Jupyter notebook fi
 
 <pre> find . -name 'mlruns' </pre>
 
+- `find` is a command-line utility for searching file systems.
+-`.` specifies the current directory as the starting point for the search.
+- `name` tells find to look for files or directories matching the given name.
+- `'mlruns'` is the name of the directories you're searching for.
+
 
 ## MLflow
 
@@ -45,4 +50,33 @@ When this command is run, it will recursively search for all Jupyter notebook fi
 <pre> jupyter notebook --ip 0.0.0.0 </pre> 
 
 
+## Managing Background Processes with Screen
+
+### Creating a Screen Session
+
+1. Create a new screen session where you can run your processes in the background, use the following command. Replace <screen_name_arbitrary> with a name that makes sense for your session:
+
+<pre> screen -S `screen_name_arbitrary` </pre> 
+
+After executing this command, you'll be placed into a new terminal session where you can set environment variables and run commands as needed.
+
+2. Inside the screen, you can now run any command or process you need. Set up your environment variables as necessary before executing your desired command.
+
+### Detaching from Screen
+
+To detach from the screen session and return to your original terminal, press **`CTRL + A`** followed by **`D`**. Your process will continue to run in the background.
+
+### Managing Screen Sessions
+
+* If you need to see a list of all your active screen sessions, type:
+
+<pre> screen -ls </pre>
+
+This command will display all current screen sessions, allowing you to identify the session you may want to reattach to.
+
+### Reattaching to a Screen Session
+
+To reattach to a specific screen session, use the following command with the name or ID of the session you want to access:
+
+<pre> screen -r `session_name_or_ID` </pre> 
 
