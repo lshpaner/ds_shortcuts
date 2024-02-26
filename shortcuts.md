@@ -66,9 +66,17 @@ After executing this command, you'll be placed into a new terminal session where
 
 To detach from the screen session and return to your original terminal, press **`CTRL + A`** followed by **`D`**. Your process will continue to run in the background.
 
+### Terminating a Screen
+
+To terminate a screen, type:
+
+<pre> CTRL + D </pre>
+
+When you're inside a screen session and you've closed all running applications, you can simply press **`CTRL + D`** to exit the screen session. If it's the last terminal within your screen session, this command will effectively terminate the session.
+
 ### Managing Screen Sessions
 
-* If you need to see a list of all your active screen sessions, type:
+If you need to see a list of all your active screen sessions, type:
 
 <pre> screen -ls </pre>
 
