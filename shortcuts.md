@@ -54,7 +54,7 @@ When this command is run, it will recursively search for all Jupyter notebook fi
 
 ### Creating a Screen Session
 
-1. Create a new screen session where you can run your processes in the background, use the following command. Replace <screen_name_arbitrary> with a name that makes sense for your session:
+1. Create a new screen session where you can run your processes in the background, use the following command. Replace `<screen_name_arbitrary>` with a name that makes sense for your session:
 
 <pre> screen -S `screen_name_arbitrary` </pre> 
 
