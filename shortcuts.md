@@ -1,3 +1,13 @@
+# Shortcuts and Commands for Data Science Project Workflow
+
+## Table of Contents
+1. [Searching for Text in Files Using `findstr`](#searching-for-text-in-files-using-findstr)  
+2. [Cleaning Output from Jupyter Notebooks with `nbstripout`](#cleaning-output-from-jupyter-notebooks-with-nbstripout)  
+3. [Partially Matching Files (Folder Paths) in UNIX](#partially-matching-files-folder-paths-in-unix) 
+4. [MLflow](#mlflow)
+5. [Accessing Jupyter Notebook on Server](#accessing-jupyter-notebook-on-server)
+6. [Managing Background Processes with Screen](#managing-background-processes-with-screen)
+
 ##  Searching for Text in Files Using `findstr`
 
 The command `findstr` is used in the Windows command line environment to search for patterns in files. Here's a breakdown of the command
@@ -11,8 +21,6 @@ The command `findstr` is used in the Windows command line environment to search 
 - `*.txt`: This part specifies the file type to search in. In this case, `*.txt` means all files with a `.txt` extension.
 
 When this command is run, it will search every text file in the current directory and its subdirectories for the string "data", regardless of the case, and display the lines where the string is found along with their file paths. 
-
-## Nbstripout
 
 ## Cleaning Output from Jupyter Notebooks with `nbstripout`
 
@@ -45,10 +53,13 @@ When this command is run, it will recursively search for all Jupyter notebook fi
 
 <pre> mlflow ui --backend-store-uri /path/to/folder --host server name --port number </pre> 
 
-## Jupyter Notebook on Server
+## Accessing Jupyter Notebook on Server
+
+Utilize the command below to seamlessly access your Jupyter Notebook hosted on a server. This setup enhances your ability to interact with and manage files with greater flexibility and convenience.
 
 <pre> jupyter notebook --ip 0.0.0.0 </pre> 
 
+This command configures the Jupyter Notebook to listen on all available IP addresses of the server, making it accessible from any network interface. It's an ideal approach for remote data analysis, enabling you to work with your notebooks from anywhere, as long as you have network access to the server.
 
 ## Managing Background Processes with Screen
 
