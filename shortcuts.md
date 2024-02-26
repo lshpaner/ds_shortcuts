@@ -1,4 +1,5 @@
 # Shortcuts and Commands for Data Science Project Workflow
+---
 
 ## Table of Contents
 1. [Searching for Text in Files Using `findstr`](#searching-for-text-in-files-using-findstr)  
@@ -8,6 +9,7 @@
 5. [Accessing Jupyter Notebook on Server](#accessing-jupyter-notebook-on-server)
 6. [Managing Background Processes with Screen](#managing-background-processes-with-screen)
 
+---
 ##  Searching for Text in Files Using `findstr`
 
 The command `findstr` is used in the Windows command line environment to search for patterns in files. Here's a breakdown of the command
